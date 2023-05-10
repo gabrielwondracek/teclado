@@ -25,16 +25,6 @@ button {
     transform: translate(-0.05em, -0.05em);
     box-shadow: 0.15em 0.15em;
   }
-  
-  button:hover {
-    transform: translate(-0.05em, -0.05em);
-    box-shadow: 0.15em 0.15em;
-  }
-  
-  button:active {
-    transform: translate(0.05em, 0.05em);
-    box-shadow: 0.05em 0.05em;
-  }
 
 .linha2 {
     width: 100%;
@@ -84,6 +74,7 @@ button {
     flex-direction: column;
     justify-content: space-between;
     border-radius: 10px;
+    align-items: end;
 }
 
 .setas1
