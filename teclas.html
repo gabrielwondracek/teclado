@@ -10,7 +10,7 @@
 <body>
     <div class="teclado">
         <div class="linha1">
-            <button id="27">esc</button>
+            <button id="27">ESC</button>
         </div>
         <div class="linha2">
             <button id="222">~<br>`</button>
@@ -29,57 +29,57 @@
             <button id="8">backspace</button>
         </div>
         <div class="linha3">
-            <button id="9">tab</button>
-            <button id="81">q</button>
-            <button id="87">w</button>
-            <button id="69">e</button>
-            <button id="82">r</button>
-            <button id="84">t</button>
-            <button id="89">y</button>
-            <button id="85">u</button>
-            <button id="73">i</button>
-            <button id="79">o</button>
-            <button id="80">p</button>
+            <button id="9">TAB</button>
+            <button id="81">Q</button>
+            <button id="87">W</button>
+            <button id="69">E</button>
+            <button id="82">R</button>
+            <button id="84">T</button>
+            <button id="89">Y</button>
+            <button id="85">U</button>
+            <button id="73">I</button>
+            <button id="79">O</button>
+            <button id="80">P</button>
             <button id="221">{<br>[</button>      
             <button id="220">}<br>]</button>
             <button id="226">|<br>\</button>
         </div>
         <div class="linha4">
-            <button id="20">caps lock</button>
-            <button id="65">a</button>
-            <button id="83">s</button>
-            <button id="68">d</button>
-            <button id="70">f</button>
-            <button id="71">g</button>
-            <button id="72">h</button>
-            <button id="74">j</button>
-            <button id="75">k</button>
-            <button id="76">l</button>
-            <button id="186">ç</button>
+            <button id="20">CAPS LOCK</button>
+            <button id="65">A</button>
+            <button id="83">S</button>
+            <button id="68">D</button>
+            <button id="70">F</button>
+            <button id="71">G</button>
+            <button id="72">H</button>
+            <button id="74">J</button>
+            <button id="75">K</button>
+            <button id="76">L</button>
+            <button id="186">Ç</button>
             <button id="191">:<br>;</button>      
             <button id="192">"<br>'</button>
-            <button id="13">enter</button>
+            <button id="13">ENTER</button>
         </div>
         <div class="linha5">
-            <button id="16">shift</button>
-            <button id="90">z</button>
-            <button id="88">x</button>
-            <button id="67">c</button>
-            <button id="86">v</button>
-            <button id="66">b</button>
-            <button id="78">n</button>
-            <button id="77">m</button>
+            <button id="16">SHIFT</button>
+            <button id="90">Z</button>
+            <button id="88">X</button>
+            <button id="67">C</button>
+            <button id="86">V</button>
+            <button id="66">B</button>
+            <button id="78">N</button>
+            <button id="77">M</button>
             <button id="188"><<br>,</button>
             <button id="190">><br>.</button>
             <button id="193">?<br>/</button>
-            <button id="16">shift</button>
+            <button id="16">SHIFT</button>
         </div>
         <div class="linha6">
-            <button id="17">crtl</button>
-            <button id="18">alt</button>
+            <button id="17">CRTL</button>
+            <button id="18">ALT</button>
             <button class="space" id="32">&nbsp</button>
-            <button id="18">alt</button>
-            <button id="17">crtl</button>
+            <button id="18">ALT</button>
+            <button id="17">CRTL</button>
             <div class="alinhar">
             <button class="setas1" id="37"><</button>
             <div class="setas">
@@ -106,13 +106,15 @@ function Pega_Tecla(e)
     tecla = e.keyCode;
     console.log(tecla); // MOSTRA O CÓDIGO DA TECLA PRESSIONADA
     tirarCores();
-    document.getElementById(tecla).style.backgroundColor = "blue"
+    document.getElementById(tecla).style.boxShadow = "1.5px 1.5px 1.5px black"
+    document.getElementById(tecla).style.transform = "translate(0.05em, 0.05em)"
 }
 
 function tirarCores() {
     for (x=1;x<=300;x++) {
         try{
-            document.getElementById(x).style.backgroundColor = "#FBCA1F"
+            document.getElementById(x).style.transform = "translate(-0.05em, -0.05em)"
+            document.getElementById(x).style.boxShadow = "2px 2px 2px black"
         }
         catch(erro)
         {   }
