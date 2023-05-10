@@ -62,7 +62,7 @@ button {
 }
 
 .space {
-    width: 500px;
+    width: 600px;
 }
 
 .setas
@@ -73,7 +73,6 @@ button {
     flex-direction: column;
     justify-content: space-between;
     border-radius: 10px;
-    border: solid 2px black;
 }
 
 .setas1
@@ -87,7 +86,6 @@ button {
 {
     width: 70px;
     height: 35px;
-    border: none;
     border-radius: 10px;
 }
 
@@ -95,9 +93,6 @@ button {
 {
     width: 70px;
     height: 35px;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
     border-radius: 10px;
     border-top-left-radius: 0%;
     border-top-right-radius: 0%;
